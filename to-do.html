@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Todo-App</title>
+        <link href="to-do.css" rel="stylesheet"/> 
+        <script src="to-do.js">
+        </script>
+        <script id="todoTemplate" type="text/template">
+            <div class="single-todo">
+                <span class="todo">##TODO_LABEL##</span>
+                <span class="chk-box">
+                    <input type="checkbox" onchange="handleComplete(##TODO_ID##)"></input>
+                </span>
+            </div>
+        </script>
+    </head>
+
+    <body>
+        <h2>Todo App</h2>
+        <form onsubmit="addTodo(event)">
+            <input type="text" id="txtTodo">
+            <input type="submit" value="Add"/>
+        </form>
+        <div id="to-do"></div>
+    </body>
+</html>
