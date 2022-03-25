@@ -27,3 +27,18 @@ form {
   width: 20%;
   display: inline-block;
 }
+
+#txtTodo {
+  height: 30px;
+  width: 200px;
+  margin: 10px;
+  box-sizing: border-box;
+}
+input[type="submit"] {
+  height: 30px;
+  width: 60px;
+}
+#taskError {
+  display: none;
+  color: red;
+}

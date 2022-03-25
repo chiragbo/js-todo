@@ -14,11 +14,12 @@
         </script>
     </head>
 
-    <body>
+    <body onload="loadData()">
         <h2>Todo App</h2>
         <form onsubmit="addTodo(event)">
-            <input type="text" id="txtTodo">
+            <input placeholder ="Enter Task"type="text" id="txtTodo">
             <input type="submit" value="Add"/>
+            <span id="taskError"> Enter Task</span>
         </form>
         <div id="to-do"></div>
     </body>
