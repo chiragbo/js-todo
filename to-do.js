@@ -28,7 +28,11 @@ function loadData() {
           : `<span class="todo">${todo}</span><span class="chk-box">
           <input type="checkbox" onchange="handleComplete(${id})"></input>
         </span>
-        <span className="btn-delete"></span>
+        <span className="btn-delete">
+            <button class="delete-bnt" onclick= handleDelete(${id})>
+             Delete
+          </button>
+        </span>
         </div>`
       }`;
       })
@@ -106,7 +110,11 @@ const renderTodoElements = (todoList) => {
           : `<span class="todo">${todo}</span><span class="chk-box">
           <input type="checkbox" onchange="handleComplete(${id})"></input>
         </span>
-        <span className="btn-delete"></span>
+        <span className="btn-delete">
+            <button class="delete-bnt" onclick= handleDelete(${id})>
+             Delete
+          </button>
+        </span>
         </div>`
       }`;
     })
